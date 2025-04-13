@@ -1,5 +1,5 @@
 {
-  "name": "@rebound/common",
+  "name": "@rebound-mta/common",
   "version": "1.0.0-beta",
   "publishConfig": {
   "access": "public"
