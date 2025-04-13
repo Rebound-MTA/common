@@ -1,6 +1,9 @@
 {
   "name": "@rebound/common",
   "version": "1.0.0-beta",
+  "publishConfig": {
+  "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
