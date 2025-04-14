@@ -1,13 +1,15 @@
+import { Filters } from "./Filters";
+
 export interface User {
   id: string;
+  fullName: string;
   email: string;
-  role?: string;
+  password: string;
+  role?: string[];
   profile?: {
-    fullName?: string;
     avatarUrl?: string;
   };
-  billing?: {
-    cardLast4?: string;
-    plan?: string;
-  };
+  preferences?: Filters[];
+  createdAt?: Date;
+  updatedAt?: Date;
 }
