@@ -1,4 +1,13 @@
-import { Brand, Category, Condition, Filters, Size, Type } from "./Filters";
+import {
+  BottomSize,
+  Brand,
+  Category,
+  Condition,
+  Filters,
+  ShoesSize,
+  TopSize,
+  Type,
+} from "./Filters";
 
 export interface Product {
   id: string;
@@ -7,14 +16,15 @@ export interface Product {
   type: Type;
   brand: Brand;
   category: Category;
-  size: Size;
+  size: BottomSize | TopSize | ShoesSize;
+  color: string;
   condition: Condition;
   materials?: string[];
-  sustainability: Record<string,any>;
+  sustainability: Record<string, any>;
   price: number;
   images: string[];
   status: string;
   createdAt?: Date;
   updatedAt?: Date;
-  description?: string;  
+  description?: string;
 }
