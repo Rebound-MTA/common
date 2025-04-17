@@ -10,7 +10,7 @@ export interface Product {
   size: Size;
   condition: Condition;
   materials?: string[];
-  sustainability: string[];
+  sustainability: Record<string,any>;
   price: number;
   images: string[];
   status: string;
