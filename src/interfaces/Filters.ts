@@ -54,9 +54,9 @@ export type Brand =
   | "Balenciaga";
 
 export interface Filters {
-  category: Category;
-  size: Size;
-  condition: Condition;
-  type: Type;
-  brand: Brand;
+  category: Category[];
+  size: Size[];
+  condition: Condition[];
+  type: Type[];
+  brand: Brand[];
 }
