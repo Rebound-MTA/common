@@ -12,7 +12,7 @@ export interface User {
     avatarUrl?: string;
   };
   location?: Location;
-  preferences?: Filters[];
+  preferences?: Filters;
   createdAt?: Date;
   updatedAt?: Date;
 }
