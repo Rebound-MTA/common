@@ -3,6 +3,8 @@ import { Location } from "./Location";
 export interface User {
   id: string;
   fullName: string;
+  gender?: "male" | "female" | "other";
+  dateOfBirth?: Date;
   email: string;
   phoneNumber?: string;
   bio?: string;
