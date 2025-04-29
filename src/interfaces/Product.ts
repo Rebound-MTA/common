@@ -5,6 +5,7 @@ import {
   Color,
   Condition,
   Filters,
+  OneSize,
   ShoesSize,
   TopSize,
   Type,
@@ -17,7 +18,7 @@ export interface Product {
   type?: Type;
   brand?: Brand;
   category?: Category;
-  size?: BottomSize | TopSize | ShoesSize;
+  size?: BottomSize | TopSize | ShoesSize | OneSize;
   color?: Color;
   condition?: Condition;
   materials?: string[];

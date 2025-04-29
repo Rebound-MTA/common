@@ -1,9 +1,28 @@
 export const categories = [
-  "clothing",
-  "shoes",
-  "accessories",
-  "bags",
-  "jewelry",
+  "dress",
+  "jeans",
+  "t-shirt",
+  "sneakers",
+  "heels",
+  "jacket",
+  "bag",
+  "necklace",
+  "hat",
+  "skirt",
+  "shorts",
+  "boots",
+  "sweater",
+  "sunglasses",
+  "scarf",
+  "belt",
+  "socks",
+  "sandal",
+  "suit",
+  "sweatshirt",
+  "pajamas",
+  "swimwear",
+  "activewear",
+  "other",
 ] as const;
 
 export const top_sizes = [
@@ -51,6 +70,10 @@ export const bottom_sizes = [
 ] as const;
 
 export const shoes_sizes = [
+  "EU 32",
+  "EU 33",
+  "EU 34",
+  "EU 35",
   "EU 36",
   "EU 37",
   "EU 38",
@@ -65,6 +88,35 @@ export const shoes_sizes = [
   "EU 47",
   "EU 48",
 ] as const;
+
+export const one_size = ["One Size"] as const;
+
+export const category_sizes = {
+  dress: "top_sizes",
+  jeans: "bottom_sizes",
+  "t-shirt": "top_sizes",
+  sneakers: "shoes_sizes",
+  heels: "shoes_sizes",
+  jacket: "top_sizes",
+  bag: "one_size",
+  necklace: "one_size",
+  hat: "one_size",
+  skirt: "bottom_sizes",
+  shorts: "bottom_sizes",
+  boots: "shoes_sizes",
+  sweater: "top_sizes",
+  sunglasses: "one_size",
+  scarf: "one_size",
+  belt: "one_size",
+  socks: "one_size",
+  sandal: "shoes_sizes",
+  suit: "top_sizes",
+  sweatshirt: "top_sizes",
+  pajamas: "top_sizes",
+  swimwear: "top_sizes",
+  activewear: "top_sizes",
+  other: "one_size",
+} as const;
 
 export const conditions = ["new", "like new", "good", "fair", "worn"] as const;
 
@@ -81,6 +133,18 @@ export const types = [
   "skirt",
   "shorts",
   "boots",
+  "sweater",
+  "sunglasses",
+  "scarf",
+  "belt",
+  "socks",
+  "sandal",
+  "suit",
+  "sweatshirt",
+  "pajamas",
+  "swimwear",
+  "activewear",
+  "other",
 ] as const;
 
 export const brands = [
@@ -115,6 +179,7 @@ export type Category = (typeof categories)[number];
 export type TopSize = (typeof top_sizes)[number];
 export type BottomSize = (typeof bottom_sizes)[number];
 export type ShoesSize = (typeof shoes_sizes)[number];
+export type OneSize = (typeof one_size)[number];
 export type Condition = (typeof conditions)[number];
 export type Type = (typeof types)[number];
 export type Brand = (typeof brands)[number];
