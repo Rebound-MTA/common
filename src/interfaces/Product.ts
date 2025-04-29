@@ -2,6 +2,7 @@ import {
   BottomSize,
   Brand,
   Category,
+  Color,
   Condition,
   Filters,
   ShoesSize,
@@ -13,17 +14,17 @@ export interface Product {
   id: string;
   sellerId: string;
   title: string;
-  type: Type;
-  brand: Brand;
-  category: Category;
-  size: BottomSize | TopSize | ShoesSize;
-  color: string;
-  condition: Condition;
+  type?: Type;
+  brand?: Brand;
+  category?: Category;
+  size?: BottomSize | TopSize | ShoesSize;
+  color?: Color;
+  condition?: Condition;
   materials?: string[];
-  sustainability: Record<string, any>;
+  sustainability?: Record<string, any>;
   price: number;
-  images: string[];
-  status: string;
+  images?: string[];
+  status?: string;
   createdAt?: Date;
   updatedAt?: Date;
   description?: string;
