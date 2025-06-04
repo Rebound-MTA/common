@@ -4,4 +4,5 @@ export interface Location {
   country: string;
   latitude: number;
   longitude: number;
+  coordinates?: [number];
 }
